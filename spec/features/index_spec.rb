@@ -3,7 +3,9 @@ describe 'Landing Page', type: :feature do
         visit '/'
     end
 
-    it 'displays header on landing page' do
+    it 'displays headline on landing page' do
         expect(page).to have_content 'Viaplay'
     end
+
+    
 end
