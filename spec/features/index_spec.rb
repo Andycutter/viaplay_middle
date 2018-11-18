@@ -14,4 +14,8 @@ describe 'Landing Page', type: :feature do
     it 'displays footer on landing page' do
         expect(page).to have_css '#footer'
     end
+
+    it 'displayes div with main content' do
+        expect(page).to have_css '#content'
+    end
 end
