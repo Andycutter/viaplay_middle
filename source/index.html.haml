@@ -2,31 +2,7 @@
     #header
         %p header
     #content
-        %img{alt: '', src: 'images/placeholder1.png'}
-        #category
-        :javascript
-            document.addEventListener('DOMContentLoaded', () => {
-                console.log('loaded!');
-                const proxyURL = 'https://cors-anywhere.herokuapp.com/';
-                const apiURL = 'https://content.viaplay.se/pc-se/serier/samtliga';
-                
-                fetch(proxyURL + apiURL).then(response => {
-                    response.json().then(viaplay => {
-                        console.log(viaplay)
-                        let displayDiv = document.querySelector('#category')
-                        viaplay._links['viaplay:sections'].forEach(category => {
-                            let categoryDiv = document.createElement('div')
-                            categoryDiv.innerHTML = category.title
-                            displayDiv.appendChild(categoryDiv)
-                        })
-                    });
-                });
-            })
+        .category
     #footer
         %p footer
-
-// fetch(proxyURL + apiURL).then(response => {
-//                    response.json().then(viaplay => {
-//                        console.log(viaplay._links['viaplay:sections'][0].title)
-//                    });
-//                });
+%script{ src: 'javascripts/api.js' }

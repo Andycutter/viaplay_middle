@@ -23,3 +23,11 @@ body {
 #content {
     margin: 60px;
 }
+
+.category {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 125px);
+    grid-template-rows: auto;
+    border-style: solid;
+    border-color: red;
+}
