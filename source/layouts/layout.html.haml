@@ -7,9 +7,6 @@
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", name: "viewport"}/
     %title= current_page.data.title || "Viaplay by Andy"
     = stylesheet_link_tag "all"
-    = javascript_include_tag "site"
+    = javascript_include_tag "all"
   %body
-    #content
-      = partial 'partials/header'
-      = yield
-      = partial 'partials/footer'
+    = yield
