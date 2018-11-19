@@ -9,7 +9,7 @@
     = stylesheet_link_tag "all"
     = javascript_include_tag "site"
   %body
-    = partial 'partials/header'
     #content
+      = partial 'partials/header'
       = yield
-    = partial 'partials/footer'
+      = partial 'partials/footer'
