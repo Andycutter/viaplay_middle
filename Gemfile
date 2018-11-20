@@ -4,6 +4,7 @@ gem 'middleman', '~> 4.2', '>= 4.2.1'
 gem "middleman-livereload", "~> 3.1.0"
 gem 'haml'
 gem 'middleman-autoprefixer', '~> 2.7'
+gem 'middleman-deploy'
 
 group :development, :test do
     gem 'capybara'
