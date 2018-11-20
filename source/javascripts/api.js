@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             viaplay._embedded['viaplay:blocks'][0]._embedded['viaplay:products'].forEach(category => {
                 let categoryDiv = document.createElement('div')
                 categoryDiv.setAttribute('class', 'imgDiv')
-                categoryDiv.innerHTML = `<img src="${category.content.images.boxart.url}">`
+                categoryDiv.innerHTML = `<a href="${category.publicPath}.html"><img src="${category.content.images.boxart.url}"></a>`
                 displayDiv.appendChild(categoryDiv)
             });
         });
