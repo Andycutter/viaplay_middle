@@ -6,11 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
         response.json().then(viaplay => {
             console.log(viaplay)
             let displayDiv = document.querySelector('.category')
-            viaplay._links['viaplay:categoryFilters'].forEach(category => {
+            viaplay._embedded['viaplay:blocks'][0]._embedded['viaplay:products'].forEach(category => {
                 let categoryDiv = document.createElement('div')
-                categoryDiv.innerHTML = category.title
+                categoryDiv.setAttribute('class', 'imgDiv')
+                categoryDiv.innerHTML = `<img src="${category.content.images.boxart.url}">`
                 displayDiv.appendChild(categoryDiv)
-            })
+            });
         });
     });
 });
