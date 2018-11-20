@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#footer {
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #333;
+    z-index: 9999;
+}
+
+#header {
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: #333;
+    z-index: 9999;
+}
+
+.content {
+    margin: 100px 10px;
+    position: relative;
+}
+
+.category {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 225px);
+    grid-template-rows: auto;
+}
+
+h1, p {
+    font-family: 'MTG Sans', Helvetica, Arial, sans-serif;
+}
+
+.img {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+}
+
+.headline {
+    position: absolute;
+    top: 0px;
+    left: 135px;
+}
+
+.description {
+    position: absolute;
+    top: 80px;
+    left: 135px;
+    width: 550px;
+}
+
+.year {
+    position: absolute;
+    top: 90px;
+    left: 135px;
+}
