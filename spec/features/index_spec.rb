@@ -3,10 +3,6 @@ describe 'Landing Page', type: :feature do
         visit '/'
     end
 
-    it 'displays headline on landing page' do
-        expect(page).to have_content 'Viaplay'
-    end
-
     it 'displays a header on landing page' do
         expect(page).to have_css '#header'
     end
@@ -15,7 +11,7 @@ describe 'Landing Page', type: :feature do
         expect(page).to have_css '#footer'
     end
 
-    it 'displayes div with main content' do
-        expect(page).to have_css '#content'
+    it 'displays div with series' do
+        expect(page).to have_css '#category'
     end
 end
