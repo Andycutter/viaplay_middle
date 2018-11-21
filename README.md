@@ -44,6 +44,6 @@ To see the source code visit the Git repository [Source code](https://github.com
 To see tests run `rspec` in your terminal from the root directory
 
 # Notes and comments
-Only the first serie "Grey's Anatomy" has a working info-page when clicking on the image. This is done just to illustrate the idea behind the application. In retrospective another framework should have been chosen (e.g. Ruby on Rails), to make it easier to show the information for each serie in a single view.
+Only the first serie "Grey's Anatomy" has a working info-page when clicking on the image. This is done just to illustrate the idea behind the application. In retrospective another framework should have been chosen (e.g. Ruby on Rails), to make it easier to show the information for each serie in a single view. For example not the have a view / html-file for each serie.
 
 No navigation using arrowkeys was implemented. 
