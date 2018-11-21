@@ -9,7 +9,9 @@ Middleman was chosing because it is a light weight framework for building static
 
 # Deployment
 To see the web application see:
+
 [Go to site](https://peaceful-mcnulty-a3154d.netlify.com/ "Viaplay")
+
 Deployed with Netlify and GitHub
 
 # Local version
@@ -20,9 +22,6 @@ In the terminal run `bundle install` to setup the application.
 To get a local server running with the application run `middleman server` and visit `http://localhost:4567/` in your browser.
 
 For a guide to install Middleman, see the official documentation [Middleman](https://middlemanapp.com/basics/install/)
-
-# Tests
-To see tests run `rspec` in your terminal from the root directory
 
 # Code base / Git
 To see the source code visit the Git repository [Source code](https://github.com/Andycutter/viaplay_middle "Source code").
@@ -40,6 +39,9 @@ To see the source code visit the Git repository [Source code](https://github.com
 `/stylesheets` contain the styling for the site. For a better overview the styling is divided up into the partials `maincontent.css.scss` and `series.css.scss` and imported to `all.css.scss`
 
 `/spec/` contain the testing framework. The "spec"-files contains the tests and `user_sees_content_on_landingpage` contains basic **User stories** for builing the application
+
+# Tests
+To see tests run `rspec` in your terminal from the root directory
 
 # Notes and comments
 Only the first serie "Grey's Anatomy" has a working info-page when clicking on the image. This is done just to illustrate the idea behind the application. In retrospective another framework should have been chosen (e.g. Ruby on Rails), to make it easier to show the information for each serie in a single view.
