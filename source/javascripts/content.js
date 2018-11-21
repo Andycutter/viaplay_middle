@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
             let displayHeadline = document.querySelector('.headline')
             let displayDescription = document.querySelector('.description')           
             let displayYear = document.querySelector('.year')           
-
             
             let imgDiv = document.createElement('div')
                 imgDiv.setAttribute('class', 'img')
